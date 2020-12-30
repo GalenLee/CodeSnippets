@@ -7,7 +7,7 @@ namespace RenameFiles
     {
         static void Main(string[] args)
         {
-            var files = Directory.GetFiles(@"C:\_projects\AzureDevOps\_Temp", "*_.txt", SearchOption.AllDirectories);
+            var files = Directory.GetFiles(@"C:\_Temp", "*_.txt", SearchOption.AllDirectories);
             foreach (var file in files)
             {
                 var newFile = file.Substring(0, file.Length - 5);
